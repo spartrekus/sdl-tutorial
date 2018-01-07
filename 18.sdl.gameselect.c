@@ -186,8 +186,7 @@ int main(int argc, char *argv[])
    int rows = 600; 
    int cols = 800;
    SDL_Surface *screen;  // create screen
-   // screen = SDL_SetVideoMode(1024, 768, 0, SDL_SWSURFACE | SDL_FULLSCREEN);
-   screen = SDL_SetVideoMode( cols , rows, 32, SDL_HWSURFACE | SDL_FULLSCREEN ); 
+   screen = SDL_SetVideoMode( cols , rows, 32, SDL_HWSURFACE); 
    SDL_putenv("SDL_VIDEO_CENTERED=center"); 
 
    int ch ; 
